@@ -20,7 +20,8 @@ class Bugels():
 
         create = lambda x: random.randint(x, 9)
         self.number = list(map(create, [1,0,0]))
-        
+        # num = random.randint(100, 999)
+        # self.number = [int(a) for a in str(num)]
         self.status = None
 
 
@@ -50,7 +51,7 @@ class Bugels():
             self.status = 'Pico'  
         else:
             self.status = 'Bagels'     
-                
+
         
         if number_p  == self.number:
             return True
@@ -90,5 +91,5 @@ while True:
         elif turn == 10:
             print('You LOSE!!!')
             break
-    else: 
+    else:
         print('You must enter a number from 100-999!!!')
